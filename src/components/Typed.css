@@ -1,0 +1,15 @@
+.typed-element {
+  display: flex;
+  align-items: center;
+}
+
+.typed-cursor {
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
+}

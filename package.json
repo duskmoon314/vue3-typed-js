@@ -1,6 +1,39 @@
 {
-  "name": "vite-vue3ts-eslint-prettier",
-  "version": "0.0.0",
+  "name": "@duskmoon/vue3-typed-js",
+  "version": "0.0.2",
+  "author": {
+    "name": "duskmoon",
+    "email": "campbell.he@icloud.com"
+  },
+  "description": "Typed.js component in vue 3 based on Orlandster/vue-typed-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duskmoon314/vue3-typed-js.git"
+  },
+  "homepage": "https://github.com/duskmoon314/vue3-typed-js",
+  "bugs": {
+    "url": "https://github.com/duskmoon314/vue3-typed-js/issues"
+  },
+  "keywords": [
+    "Typed.js",
+    "vue3",
+    "typescript"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "./src/index.d.ts",
+  "main": "./dist/vue3-typed-js.es.js",
+  "module": "./dist/vue3-typed-js.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-typed-js.es.js",
+      "require": "./dist/vue3-typed-js.umd.js"
+    }
+  },
+  "private": false,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -11,9 +44,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "typed.js": "^2.0.12",
     "vue": "3.1.4"
   },
   "devDependencies": {
+    "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "4.28.1",
     "@typescript-eslint/parser": "4.28.1",
     "@vitejs/plugin-vue": "1.2.4",

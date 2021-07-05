@@ -1,18 +1,19 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <Typed :options="options">
+    <h1 class="typing"></h1>
+  </Typed>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+<script setup lang="ts">
+import { Typed } from "./components";
+import type { TypedOptions } from "./components";
 
-export default defineComponent({
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-});
+const options: TypedOptions = {
+  strings: ["Hello", "World", "This is vue3-typed-js"],
+  loop: true,
+  typeSpeed: 30,
+};
 </script>
 
 <style>
