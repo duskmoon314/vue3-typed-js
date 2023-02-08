@@ -1,9 +1,27 @@
 {
-  "extends": ["config:base"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "automerge": true
+    },
+    {
+      "matchPackagePatterns": [
+        "^eslint",
+        "^@typescript-eslint",
+        "^husky",
+        "^lint-staged",
+        "^prettier"
+      ],
+      "groupName": "linting tools"
     }
   ]
 }
