@@ -1,4 +1,5 @@
-import { h, ref, PropType, defineComponent, onMounted } from "vue";
+import { h, ref, defineComponent, onMounted } from "vue";
+import type {PropType} from "vue";
 import type { TypedOptions } from "typed.js";
 import Typed from "typed.js";
 import "./Typed.css";
