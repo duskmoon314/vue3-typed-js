@@ -45,14 +45,14 @@
   },
   "dependencies": {
     "typed.js": "^2.0.12",
-    "vue": "3.1.4"
+    "vue": "3.2.47"
   },
   "devDependencies": {
     "@types/node": "18.13.0",
     "@typescript-eslint/eslint-plugin": "5.51.0",
     "@typescript-eslint/parser": "5.51.0",
-    "@vitejs/plugin-vue": "1.2.4",
-    "@vue/compiler-sfc": "3.1.4",
+    "@vitejs/plugin-vue": "4.0.0",
+    "@vue/compiler-sfc": "3.2.47",
     "eslint": "8.33.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.6.0",
@@ -61,7 +61,7 @@
     "husky": "8.0.3",
     "lint-staged": "13.1.1",
     "prettier": "2.8.4",
-    "typescript": "4.3.5",
+    "typescript": "4.9.5",
     "vite": "4.1.1",
     "vue-tsc": "1.0.24"
   },
