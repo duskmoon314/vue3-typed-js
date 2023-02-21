@@ -13,7 +13,7 @@ I'm a newbie of vue and creating component library. Please point out my mistake 
 ### Install
 
 ```
-npm install vue3-typed-js
+npm install @duskmoon/vue3-typed-js
 ```
 
 ### Demo
