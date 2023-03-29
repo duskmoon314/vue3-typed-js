@@ -1,6 +1,6 @@
 {
   "name": "@duskmoon/vue3-typed-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "duskmoon",
     "email": "campbell.he@icloud.com"
@@ -24,13 +24,14 @@
     "dist",
     "src"
   ],
-  "types": "./src/index.d.ts",
-  "main": "./dist/vue3-typed-js.es.js",
-  "module": "./dist/vue3-typed-js.umd.js",
+  "types": "src/index.d.ts",
+  "main": "dist/vue3-typed-js.mjs",
+  "module": "dist/vue3-typed-js.umd.js",
   "exports": {
     ".": {
-      "import": "./dist/vue3-typed-js.es.js",
-      "require": "./dist/vue3-typed-js.umd.js"
+      "import": "./dist/vue3-typed-js.mjs",
+      "require": "./dist/vue3-typed-js.umd.js",
+      "types": "./src/index.d.ts"
     }
   },
   "private": false,
